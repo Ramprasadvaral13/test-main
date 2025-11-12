@@ -1,0 +1,1 @@
+{"Modules":[{"Key":"","Source":"","Dir":"."},{"Key":"compute","Source":"git::https://github.com/Ramprasadvaral13/test-module.git//modules/compute?ref=main","Dir":".terraform/modules/compute/modules/compute"},{"Key":"vpc","Source":"git::https://github.com/Ramprasadvaral13/test-module.git//modules/vpc?ref=main","Dir":".terraform/modules/vpc/modules/vpc"}]}

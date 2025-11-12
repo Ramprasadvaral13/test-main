@@ -4,7 +4,7 @@ provider "aws" {
 }
 
 module "vpc" {
-    source = "git::https://github.com/Ramprasadvaral13/test-module.git//vpc?ref=main"
+    source = "git::https://github.com/Ramprasadvaral13/test-module.git//modules/vpc?ref=main"
     vpc_cidr = var.vpc_cidr
     subnet = var.subnet
     route_cidr = var.route_cidr
@@ -12,7 +12,7 @@ module "vpc" {
 }
 
 module "compute" {
-    source = "git::https://github.com/Ramprasadvaral13/test-module.git//compute?ref=main"
+    source = "git::https://github.com/Ramprasadvaral13/test-module.git//modules/compute?ref=main"
     vpc_id = module.vpc.vpc_id
     subnet_ids = module.vpc.private_subnet_ids
     name_prefix = "dev"
